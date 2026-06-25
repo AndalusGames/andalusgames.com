@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AndalusGames — mobile arcade and action games. Drift racing, Arabian dagger challenges, hill climbing, shooters, and more for Android and iOS." />
+  <meta name="theme-color" content="#0d172a" />
+  <meta property="og:title" content="AndalusGames — Mobile Game Studio" />
+  <meta property="og:description" content="Fast-paced mobile arcade games built with Unity. Play. Drift. Conquer." />
+  <meta property="og:url" content="https://andalusgames.com/" />
+  <meta property="og:image" content="https://andalusgames.com/assets/logo.png" />
+  <meta property="og:type" content="website" />
+  <title>AndalusGames — Mobile Game Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--gold" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--blue" aria-hidden="true"></div>
+
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a class="logo" href="index.html" aria-label="AndalusGames home">
+        <img src="assets/logo.png" alt="AndalusGames" width="200" height="70" />
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#games">Games</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="#contact" class="nav__cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero__content">
+        <img class="hero__logo" src="assets/logo.png" alt="AndalusGames logo" width="420" height="146" />
+        <p class="eyebrow">Mobile Game Studio</p>
+        <h1>Built for <span class="gradient-text">speed</span>, precision &amp; play</h1>
+        <p class="hero__lead">
+          AndalusGames crafts fast-paced arcade experiences for Android and iOS —
+          from drift chases and dagger throws to hill climbs and platform action.
+        </p>
+        <div class="hero__actions">
+          <a href="#games" class="btn btn--primary">Explore Games</a>
+          <a href="https://github.com/AndalusGames" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+        <dl class="hero__stats">
+          <div><dt>12+ TITLES</dt><dd>Mobile game library</dd></div>
+          <div><dt>UNITY</dt><dd>Engine powered</dd></div>
+          <div><dt>iOS &amp; ANDROID</dt><dd>Store ready</dd></div>
+        </dl>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero-card hero-card--drift">
+          <span class="hero-card__tag">Racing</span>
+          <h3>Ultimate Drift Chase</h3>
+          <p>Outrun the cops. Master the drift.</p>
+        </div>
+        <div class="hero-card hero-card--dagger">
+          <span class="hero-card__tag">Arcade</span>
+          <h3>Arabian Dagger</h3>
+          <p>Precision throws. Desert treasures.</p>
+        </div>
+        <div class="hero-card hero-card--hill">
+          <span class="hero-card__tag">Driving</span>
+          <h3>Monster Car</h3>
+          <p>Climb hills. Beat physics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured section" id="featured">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Flagship titles</p>
+          <h2>Featured games</h2>
+        </div>
+        <div class="featured__grid">
+          <article class="game-card game-card--drift">
+            <div class="game-card__badge">New</div>
+            <div class="game-card__body">
+              <span class="game-card__genre">Racing · Action</span>
+              <h3>Ultimate Drift Chase: Cop Showdown</h3>
+              <p>Drift through city streets, dodge pursuit, and survive high-intensity police chase sequences in this arcade driving experience.</p>
+              <ul class="game-card__tags">
+                <li>Drift mechanics</li>
+                <li>Police chase</li>
+                <li>Mobile arcade</li>
+              </ul>
+            </div>
+          </article>
+          <article class="game-card game-card--dagger">
+            <div class="game-card__body">
+              <span class="game-card__genre">Arcade · Precision</span>
+              <h3>Arabian Dagger: Epic Challenge</h3>
+              <p>Throw daggers at rotating shields, collect treasures, and master timing across stylized Arabian desert levels.</p>
+              <ul class="game-card__tags">
+                <li>One-tap gameplay</li>
+                <li>Rotating targets</li>
+                <li>Desert theme</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="games section" id="games">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Our library</p>
+          <h2>All games</h2>
+          <p class="section__sub">Mobile arcade, racing, action, and adventure — built with Unity.</p>
+        </div>
+        <div class="filter-bar" role="tablist" aria-label="Filter games by genre">
+          <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="racing" role="tab">Racing</button>
+          <button class="filter-btn" data-filter="arcade" role="tab">Arcade</button>
+          <button class="filter-btn" data-filter="action" role="tab">Action</button>
+          <button class="filter-btn" data-filter="adventure" role="tab">Adventure</button>
+        </div>
+        <div class="games__grid" id="gamesGrid">
+          <article class="game-tile" data-genre="racing">
+            <div class="game-tile__icon">🏎️</div>
+            <h3>Ultimate Drift Chase</h3>
+            <p>Drift racing with police chase action.</p>
+            <span class="status status--live">Available</span>
+          </article>
+          <article class="game-tile" data-genre="racing">
+            <div class="game-tile__icon">🚗</div>
+            <h3>Car Racing Drifting</h3>
+            <p>Full-featured car racing and drift template.</p>
+            <span class="status status--live">Available</span>
+          </article>
+          <article class="game-tile" data-genre="racing">
+            <div class="game-tile__icon">🛞</div>
+            <h3>Monster Car Hill Climbing</h3>
+            <p>Hill-climb driving with physics challenges.</p>
+            <span class="status status--live">Available</span>
+          </article>
+          <article class="game-tile" data-genre="arcade">
+            <div class="game-tile__icon">🗡️</div>
+            <h3>Arabian Dagger</h3>
+            <p>Precision dagger throws on rotating shields.</p>
+            <span class="status status--live">Available</span>
+          </article>
+          <article class="game-tile" data-genre="arcade">
+            <div class="game-tile__icon">🔪</div>
+            <h3>Knife Up</h3>
+            <p>Knife-throwing arcade reflex game.</p>
+            <span class="status status--live">Available</span>
+          </article>
+          <article class="game-tile" data-genre="arcade">
+            <div class="game-tile__icon">🐦</div>
+            <h3>Birdy Jump</h3>
+            <p>Endless jumping arcade with ad support.</p>
+            <span class="status status--live">Available</span>
+          </article>
+          <article class="game-tile" data-genre="arcade">
+            <div class="game-tile__icon">🎨</div>
+            <h3>BLITZ: Color Carnival</h3>
+            <p>Fast color-matching reflex arcade action.</p>
+            <span class="status status--soon">Coming soon</span>
+          </article>
+          <article class="game-tile" data-genre="arcade">
+            <div class="game-tile__icon">⚽</div>
+            <h3>Bouncy Ball Sports Mania</h3>
+            <p>Color-switching ball through obstacle courses.</p>
+            <span class="status status--soon">Coming soon</span>
+          </article>
+          <article class="game-tile" data-genre="action">
+            <div class="game-tile__icon">👾</div>
+            <h3>Killer Boy</h3>
+            <p>2D action platformer with mobile ads.</p>
+            <span class="status status--live">Available</span>
+          </article>
+          <article class="game-tile" data-genre="action">
+            <div class="game-tile__icon">🔫</div>
+            <h3>Mr Shotgun</h3>
+            <p>2D mobile shooter arcade experience.</p>
+            <span class="status status--live">Available</span>
+          </article>
+          <article class="game-tile" data-genre="adventure">
+            <div class="game-tile__icon">🗺️</div>
+            <h3>Rian Adventure</h3>
+            <p>Complete adventure game with mobile support.</p>
+            <span class="status status--live">Available</span>
+          </article>
+          <article class="game-tile" data-genre="adventure">
+            <div class="game-tile__icon">🌴</div>
+            <h3>Saud's Adventure</h3>
+            <p>Landscape mobile adventure experience.</p>
+            <span class="status status--live">Available</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__text">
+          <p class="eyebrow">Who we are</p>
+          <h2>Independent studio.<br />Mobile-first mindset.</h2>
+          <p>
+            AndalusGames is an independent mobile game studio focused on arcade-style experiences —
+            quick to pick up, hard to put down. Every title is built in Unity and tuned for touch controls,
+            short sessions, and high replay value.
+          </p>
+          <p>
+            From desert dagger challenges to cop chase drift racing, our games blend accessible mechanics
+            with polished mobile monetization and platform-ready builds for Android and iOS.
+          </p>
+        </div>
+        <div class="about__cards">
+          <div class="about-card">
+            <span class="about-card__num">01</span>
+            <h3>Unity powered</h3>
+            <p>Professional game engine stack with proven mobile pipelines.</p>
+          </div>
+          <div class="about-card">
+            <span class="about-card__num">02</span>
+            <h3>Arcade DNA</h3>
+            <p>One-tap controls, score chasing, and session-based fun.</p>
+          </div>
+          <div class="about-card">
+            <span class="about-card__num">03</span>
+            <h3>Store ready</h3>
+            <p>AdMob, AppLovin MAX, and GDPR-ready integrations built in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section" id="contact">
+      <div class="container cta__box">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h2>Partner, publish, or say hello</h2>
+          <p>Interested in our games, publishing, or collaboration? We'd love to hear from you.</p>
+        </div>
+        <div class="cta__actions">
+          <a href="mailto:info@andalusgames.com" class="btn btn--primary">info@andalusgames.com</a>
+          <a href="https://github.com/AndalusGames" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html"><img src="assets/logo.png" alt="AndalusGames" width="160" height="56" /></a>
+        <p>Independent mobile game studio. Arcade racing, action, and adventure for iOS &amp; Android.</p>
+      </div>
+      <div class="footer__legal">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+          <li><a href="eula.html">EULA</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+      <p class="footer__copy">&copy; <span id="year"></span> AndalusGames. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

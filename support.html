@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AndalusGames Support — get help with our mobile games, account issues, and data requests." />
+  <meta name="theme-color" content="#0d172a" />
+  <title>Support — AndalusGames</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--gold" aria-hidden="true"></div>
+
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="index.html"><img src="assets/logo.png" alt="AndalusGames" width="180" height="63" /></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html#games">Games</a></li>
+        <li><a href="support.html" class="nav__cta">Support</a></li>
+        <li><a href="privacy-policy.html">Privacy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container legal-page">
+    <nav class="legal-nav" aria-label="Legal documents">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="eula.html">EULA</a>
+      <a href="support.html" class="is-current">Support</a>
+    </nav>
+
+    <h1>Support</h1>
+    <p class="legal-updated">We're here to help with gameplay issues, billing questions, and privacy requests.</p>
+
+    <h2>Contact us</h2>
+    <p>For all support inquiries, email us at:</p>
+    <p><a href="mailto:info@andalusgames.com" class="btn btn--primary" style="margin: 1rem 0;">info@andalusgames.com</a></p>
+    <p>We aim to respond within <strong>2–5 business days</strong>. Please include your device model, OS version, game title, and a description of the issue.</p>
+
+    <h2>Common topics</h2>
+    <ul>
+      <li><strong>Gameplay bugs</strong> — describe what happened and steps to reproduce.</li>
+      <li><strong>Ads not loading</strong> — check your internet connection and ad tracking settings on your device.</li>
+      <li><strong>In-app purchases</strong> — refunds are handled by Apple App Store or Google Play per their policies.</li>
+      <li><strong>Account / progress loss</strong> — most games store progress locally on your device unless cloud save is enabled.</li>
+    </ul>
+
+    <h2>Privacy &amp; data requests</h2>
+    <p>To request access, correction, or deletion of your personal data, email <a href="mailto:info@andalusgames.com">info@andalusgames.com</a> with the subject line <strong>"Privacy Request"</strong>. See our <a href="privacy-policy.html">Privacy Policy</a> for details on your rights.</p>
+
+    <h2>Legal documents</h2>
+    <p>
+      <a href="privacy-policy.html">Privacy Policy</a> ·
+      <a href="terms-of-service.html">Terms of Service</a> ·
+      <a href="eula.html">EULA</a>
+    </p>
+
+    <h2>Our games</h2>
+    <p>Ultimate Drift Chase, Arabian Dagger, Car Racing Drifting, Birdy Jump, Killer Boy, Mr Shotgun, Monster Car Hill Climbing, Rian Adventure, and more — see the full list on our <a href="index.html#games">games page</a>.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html"><img src="assets/logo.png" alt="AndalusGames" width="140" height="49" /></a>
+      </div>
+      <div class="footer__legal">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+          <li><a href="eula.html">EULA</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+      <p class="footer__copy">&copy; <span id="year"></span> AndalusGames</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
