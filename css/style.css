@@ -244,6 +244,14 @@ h3 { font-size: 1.05rem; }
   max-width: 230px;
   animation: float 6s ease-in-out infinite;
 }
+.hero-card__thumb {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  margin-bottom: 0.65rem;
+  background: rgba(127, 178, 240, 0.08);
+}
 .hero-card h3 { font-family: var(--font-pixel); font-size: 0.5rem; line-height: 1.8; color: var(--blue); margin: 0.4rem 0; }
 .hero-card p { font-size: 0.8rem; color: var(--text-muted); }
 
@@ -271,19 +279,34 @@ h3 { font-size: 1.05rem; }
 
 .game-card {
   border: 2px solid var(--border);
-  background: var(--bg-card);
+  background: var(--bg-card) center / cover no-repeat;
   box-shadow: var(--pixel-shadow);
-  min-height: 260px;
+  min-height: 320px;
   display: flex;
   align-items: flex-end;
   position: relative;
   overflow: hidden;
 }
 
-.game-card--drift { border-color: rgba(252,209,77,0.25); }
-.game-card--dagger { border-color: rgba(127,178,240,0.25); }
+.game-card__icon {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.35);
+  background: var(--bg);
+  z-index: 1;
+}
 
-.game-card__body { padding: 1.75rem; width: 100%; }
+.game-card__body {
+  padding: 1.75rem;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
 
 .game-card__badge {
   position: absolute;
@@ -369,14 +392,42 @@ h3 { font-size: 1.05rem; }
 .game-tile.is-hidden { display: none; }
 
 .game-tile__icon {
-  width: 48px;
-  height: 48px;
+  width: 88px;
+  height: 88px;
   border: 2px solid var(--border);
-  display: grid;
-  place-items: center;
-  font-size: 1.4rem;
   margin-bottom: 0.85rem;
   background: rgba(127, 178, 240, 0.08);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-tile__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.game-tile__icon--character {
+  background: linear-gradient(180deg, #1a2d4d 0%, #0d172a 100%);
+}
+
+.game-tile__icon--character img {
+  object-fit: contain;
+  padding: 0.35rem;
+}
+
+.game-tile__icon--wide img {
+  object-fit: contain;
+  padding: 0.25rem;
+  background: #0a0a0a;
+}
+
+.game-tile--soon .game-tile__icon img {
+  opacity: 0.55;
+  filter: grayscale(0.4);
 }
 
 .game-tile h3 {
